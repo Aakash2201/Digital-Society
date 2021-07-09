@@ -1,0 +1,23 @@
+body
+{
+  margin: 0;
+  /* text-align: center; */
+  font-family: 'Merriweather', sans-serif;
+}
+
+
+td {
+  padding: 15px;
+}
+
+.logo
+{
+  width: 50%;
+  height: 50%;
+
+}
+
+.login-btn
+{
+  margin-top: 5%;
+}
