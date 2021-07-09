@@ -6,12 +6,8 @@ function showpop(){
     var login = document.getElementById('login-id').value;
     var password = document.getElementById('password').value;
     if(login =="abc" && password=="abc")
-    alert("done");
-    else if(login != "abc" && password=="abc")
-    alert("Invalid Password");
-    else if(login=="abc" && password!="abc")
-    alert("Invalid Id")
+    window.open("https://www.google.com")
+    else if(login != "abc" || password!="abc")
+    alert("Invalid Login credentials");
 }
-var clicked = btn.addEventListener("click",showpop);
-
-
+var clicked = btn.addEventListener("click",showpop)
