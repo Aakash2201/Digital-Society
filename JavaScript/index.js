@@ -1,16 +1,15 @@
-
 var temp;
 var tempp;
 var log = ["abc","123",temp];
 var pass = ["abc","123",tempp];
 var count=0;
-var invalidMessage = document.querySelector(".invalid-credentials");
-var btn= document.querySelector(".btn");
-var btn2= document.querySelector(".btn-2");
+var invalidMessage = $(".invalid-credentials");
+var btn= $(".btn");
+var btn2= $(".btn-2");
 
 function showpop(){
-    var login = document.getElementById('login-id').value;
-    var password = document.getElementById('password').value;
+    var login = $("#login-id").val();
+    var password = $("#password").val();
     for(var i=0;i<log.length;i++)
     {
     if(login ==log[i] && password==pass[i])
@@ -20,6 +19,17 @@ function showpop(){
     }
 } 
 if(count==0)
-    invalidMessage.style.display = "flex";
+    invalidMessage.css("display","flex");
 }
-btn.addEventListener("click",showpop);
+btn.click(showpop);
+
+function register(){
+    temp = $("#register-id").val();
+tempp = $("#register-password").val();
+    log.push(temp);
+    pass.push(tempp);
+  //  console.log(regUser);
+   // console.log(log);
+   console.log(log);
+}
+btn2.click(register);
